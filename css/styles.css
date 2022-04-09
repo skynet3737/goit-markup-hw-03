@@ -21,10 +21,8 @@ body {
 
 .container {
   width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  margin: 0 auto;
+  padding: 0 15px;
   outline: 2px solid red;
 }
 
@@ -32,9 +30,21 @@ h1,
 h2,
 h3,
 p,
-ul {
+ul { 
   margin: 0;
   padding: 0;
+}
+
+img {
+  display: block;
+}
+
+.section {
+  padding: 94px 0;
+}
+
+ul {
+  list-style: none;
 }
 
 .page-header {
@@ -134,10 +144,6 @@ margin-bottom: 30px;
   color: var(--second-color);
 }
 
-.subject {
-  padding: 94px 0;
-}
-
 .subject
 .subtitle {
   font-weight: 700;
@@ -167,8 +173,26 @@ margin-bottom: 50px;
 }
 
 .team-section {
-  padding: 94px 0;
   background-color: var(--filter-color);
+}
+
+.team-img {
+  width: 270px;
+  height: 368px;
+
+  background-color: var(--fourth-color);
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+  0px 1px 1px rgba(0, 0, 0, 0.14),
+  0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.team {
+  margin-bottom: 30px;
+}
+
+.team-prof {
+  margin-bottom: 10px;
 }
 
 .team-section
@@ -199,19 +223,30 @@ p {
   text-align: center;
 }
 
+.footer-bottom {
+display: inline-block;
+
+  margin-bottom: 20px;
+}
+
+.footer-link {
+  display: inline-block;
+  margin-bottom: 9px;
+}
+
 .footer-contacts {
   padding: 60px 0;
   background-color: var(--footer-color);
 }
 
-.footer-address 
+.footer-address
 .link {
   color: var(--fiveth-color);
   line-height: 1.71;
   font-style: normal;
 }
 
-.address a {
+.address {
   color: var(--fourth-color);
   line-height: 1.71;
   font-style: normal;
@@ -220,14 +255,31 @@ p {
 /* Кнопки в портфолио */
 .buttons 
 .btn {
+padding: 6px 22px;
+border-radius: 4px;
+border: 0;
+
   color: var(--second-color);
   background-color: var(--filter-color);
+
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.62;
   
   text-align: center;
+}
+
+/* .portfolio-img {
+  margin-bottom: 20px;
+} */
+
+.portfolio-link {
+  width: 370px;
+  height: 110px;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 }
 
 .portfolio h2 {
@@ -259,8 +311,8 @@ p {
   cursor: pointer;
 }
 
-.address a:hover,
-.address a:focus {
+.address:hover,
+.address:focus {
   color: var(--third-color);
 }
 
@@ -278,6 +330,9 @@ p {
 .btn:focus {
   color: var(--fourth-color);
   background-color: var(--third-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+  0px 1px 2px rgba(0, 0, 0, 0.08),
+  0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio a:hover,
