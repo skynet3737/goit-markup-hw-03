@@ -270,10 +270,6 @@ border: 0;
   text-align: center;
 }
 
-/* .portfolio-img {
-  margin-bottom: 20px;
-} */
-
 .portfolio-link {
   width: 370px;
   height: 110px;
@@ -282,7 +278,9 @@ border: 0;
   border-bottom: 1px solid #eeeeee;
 }
 
-.portfolio h2 {
+.text-title {
+padding-top: 20px;
+
   color: var(--second-color);
   font-weight: 700;
   font-size: 18px;
@@ -291,7 +289,7 @@ border: 0;
   letter-spacing: 0.06em;
 }
 
-.portfolio p {
+.text {
   color: var(--main-color);
   font-size: 16px;
   line-height: 1.87;
