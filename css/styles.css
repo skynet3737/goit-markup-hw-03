@@ -7,6 +7,7 @@
   --fourth-color: #ffffff;
   --fiveth-color: rgba(255, 255, 255, 0.6);
   --line-color: #ececec;
+  --footer-color: #2f303a;
 }
 
 body {
@@ -29,7 +30,9 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+p,
+ul {
   margin: 0;
   padding: 0;
 }
@@ -132,6 +135,10 @@ margin-bottom: 30px;
   color: var(--second-color);
 }
 
+.subject {
+  padding: 94px 0;
+}
+
 .subject
 .subtitle {
   font-weight: 700;
@@ -148,10 +155,31 @@ p {
 
 .caption
 .subtitle {
+margin-bottom: 50px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
+}
+
+.caption-list {
+  padding-bottom: 94px;
+}
+
+.team-section {
+  padding: 94px 0;
+  background-color: var(--filter-color);
+}
+
+.team-section
+.subtitle {
+margin-bottom: 50px;
+
+font-weight: 700;
+font-size: 36px;
+line-height: 1.16;
+text-align: center;
 }
 
 .item h3 {
@@ -170,6 +198,11 @@ p {
   line-height: 1.18;
   
   text-align: center;
+}
+
+.footer-contacts {
+  padding: 60px 0;
+  background-color: var(--footer-color);
 }
 
 .footer-address 
